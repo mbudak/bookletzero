@@ -33,6 +33,8 @@ var swaggerOptions = {
 app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions))
 // Swagger
 
+// Experimental 
+/*
 if (process.env.NODE_ENV === "production"){
   app.use(express.static(path.join(__dirname, '/client/.next') ));
 
@@ -44,6 +46,7 @@ if (process.env.NODE_ENV === "production"){
     res.send("api running");
   })
 }
+*/
 
 app.listen(port, () => {
   // perform a database connection when server starts
