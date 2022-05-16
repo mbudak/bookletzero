@@ -66,10 +66,10 @@ const PrivacyPolicy = () => {
             <MainCard elevation={4} border={false} boxShadow shadow="4" sx={{ mb: 3 }}>
               <Stack spacing={2} sx={{ textAlign: 'left' }}>
                 <Typography>
-                  This Privacy Policy governs the manner in which Demos: A Network for Ideas and Action, Ltd. (“Demos”, “Us” or “We”)
+                  This Privacy Policy governs the manner in which Demos: Havagram Software. (“Demos”, “Us” or “We”)
                   collects, uses, maintains, and discloses information collected from users (“Users” or “You”) of its website located at{' '}
-                  <Link href="#" underline="none">
-                    www.demos.org
+                  <Link href="https://bookletzero.com" underline="none">
+                    www.bookletzero.com
                   </Link>{' '}
                   (the “Website”).
                 </Typography>
@@ -157,8 +157,8 @@ const PrivacyPolicy = () => {
                 <Typography variant="h3">Contacting Demos</Typography>
                 <Typography>
                   If you have any questions about this Privacy Policy or anything relating to the Website, please contact Demos at{' '}
-                  <Link href="#" underline="none">
-                    info@demos.org.
+                  <Link href="mailto://hello@bookletzero.com" underline="none">
+                    hello@bookletzero.com
                   </Link>{' '}
                 </Typography>
                 <Typography variant="h4">February 18, 2022</Typography>
