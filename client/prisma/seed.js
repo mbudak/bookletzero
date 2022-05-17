@@ -10,6 +10,7 @@ const userData: Prisma.UserCreateInput[] = [
     {
         name: 'Mark',
         email: 'promaxcoq@gmail.com',
+        
         /*posts: {
             create: [
                 title: 'Example Title Here',
