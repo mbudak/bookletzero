@@ -39,7 +39,7 @@ const Login = () => {
                     </Grid>
                   </Grid>
                   <Grid item xs={12}>
-                    <h1>// AuthLogin // </h1>
+                    <h1> AuthLogin Component Here...</h1>
                   </Grid>
                   <Grid item xs={12}>
                     <Divider />

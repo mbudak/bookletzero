@@ -29,7 +29,7 @@ function getModalStyle() {
 
 // ==============================|| SIMPLE MODAL ||============================== //
 
-export default function SimpleModal() {
+const SimpleModal = () => {
   // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
 
@@ -97,3 +97,5 @@ Body.propTypes = {
   modalStyle: PropTypes.object,
   handleClose: PropTypes.func
 };
+
+export default SimpleModal;
