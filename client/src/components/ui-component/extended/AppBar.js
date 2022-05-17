@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import LoginBtn from 'components/authentication/login-btn/LoginBtn';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -80,15 +81,7 @@ const AppBar = ({ ...others }) => {
                 Dashboard
               </Button>
               
-              <Button
-                component={Link}
-                href="https://material-ui.com/store/items/berry-react-material-admin/"
-                disableElevation
-                variant="contained"
-                color="secondary"
-              >
-                Purchase Now
-              </Button>
+              <LoginBtn>Here.</LoginBtn>
             </Stack>
             <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
               <IconButton color="inherit" onClick={drawerToggler(true)} size="large">
@@ -122,18 +115,7 @@ const AppBar = ({ ...others }) => {
                           <ListItemText primary="Documentation" />
                         </ListItemButton>
                       </Link>
-                      <Link
-                        style={{ textDecoration: 'none' }}
-                        href="https://material-ui.com/store/items/berry-react-material-admin/"
-                        target="_blank"
-                      >
-                        <ListItemButton component="a">
-                          <ListItemIcon>
-                            <IconCreditCard />
-                          </ListItemIcon>
-                          <ListItemText primary="Purchase Now" />
-                        </ListItemButton>
-                      </Link>
+                      
                     </List>
                   </Box>
                 )}

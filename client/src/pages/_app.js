@@ -1,3 +1,4 @@
+import { SessionProvider } from "next-auth/react"
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 import Head from 'next/head';
@@ -67,12 +68,14 @@ function App({ Component, pageProps }) {
               <RTLLayout>
                 <Locales>
                   <NavigationScroll>
-                    <AuthProvider>
+                    
+                    <SessionProvider session={pageProps.session} refetchInterval={0}>
                       <Layout>
                         <Component {...pageProps} />
                         <Snackbar />
                       </Layout>
-                    </AuthProvider>
+                    </SessionProvider>
+
                   </NavigationScroll>
                 </Locales>
               </RTLLayout>

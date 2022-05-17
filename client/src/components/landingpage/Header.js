@@ -122,7 +122,7 @@ const HeaderPage = () => {
                       size="large"
                       variant="text"
                     >
-                      Purchase Now
+                      Registration is Free
                     </Button>
                   </Grid>
                 </Grid>
