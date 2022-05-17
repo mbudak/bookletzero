@@ -23,7 +23,7 @@ export default function Component() {
       <>
         <Button
         component={Link}
-        href="/auth/profile"
+        href="/user/profile"
         target="_self"
         size="large"
         variant="text"
