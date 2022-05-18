@@ -76,12 +76,7 @@ const AppBar = ({ ...others }) => {
               <Link href="/" target="_self"><Logo /></Link> 
             </Typography>
             <Stack direction="row" sx={{ display: { xs: 'none', sm: 'block' } }} spacing={2}>
-            
-              <Button color="inherit" component={Link} href="login" target="_blank">
-                Dashboard
-              </Button>
-              
-              <LoginBtn>Here.</LoginBtn>
+              <LoginBtn />
             </Stack>
             <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
               <IconButton color="inherit" onClick={drawerToggler(true)} size="large">
