@@ -25,17 +25,17 @@ const HeaderWrapper = styled('div')(({ theme }) => ({
 
 // ============================|| SAAS PAGES - PRIVCY POLICY ||============================ //
 
-const PrivacyPolicy = () => {
+const UseOfCookies = () => {
   const theme = useTheme();
 
   return (
     <HeaderWrapper>
       <AppBar />
-      <Container>
+      <Container textAlign="center">
         <Grid container justifyContent="center" spacing={gridSpacing}>
           <Grid item sm={10} md={7} sx={{ mt: { md: 12.5, xs: 2.5 }, mb: { md: 8, xs: 2.5 } }}>
-            <Grid container spacing={gridSpacing} textAlign="center">
-              <Grid item xs={12}>
+            <Grid container spacing={gridSpacing}>
+              <Grid item xs={12} textAlign="center">
                 <Typography
                   variant="h1"
                   color="white"
@@ -47,10 +47,10 @@ const PrivacyPolicy = () => {
                     [theme.breakpoints.down('md')]: { fontSize: '1.8125rem', marginTop: '80px' }
                   }}
                 >
-                  Privacy Policy
+                  Use of Cookies
                 </Typography>
               </Grid>
-              <Grid item xs={12} >
+              <Grid item xs={12} textAlign="center">
                 <Typography
                   variant="h4"
                   component="div"
@@ -167,9 +167,9 @@ const PrivacyPolicy = () => {
           </Grid>
         </Grid>
       </Container>
-      <FooterPage/>
+      <FooterPage />
     </HeaderWrapper>
   );
 };
 
-export default PrivacyPolicy;
+export default UseOfCookies;

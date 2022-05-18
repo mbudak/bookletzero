@@ -25,7 +25,7 @@ const HeaderWrapper = styled('div')(({ theme }) => ({
 
 // ============================|| SAAS PAGES - PRIVCY POLICY ||============================ //
 
-const PrivacyPolicy = () => {
+const TermsOfUse = () => {
   const theme = useTheme();
 
   return (
@@ -47,10 +47,10 @@ const PrivacyPolicy = () => {
                     [theme.breakpoints.down('md')]: { fontSize: '1.8125rem', marginTop: '80px' }
                   }}
                 >
-                  Privacy Policy
+                  Terms of Use
                 </Typography>
               </Grid>
-              <Grid item xs={12} >
+              <Grid item xs={12}>
                 <Typography
                   variant="h4"
                   component="div"
@@ -166,10 +166,12 @@ const PrivacyPolicy = () => {
             </MainCard>
           </Grid>
         </Grid>
+
+        
       </Container>
       <FooterPage/>
     </HeaderWrapper>
   );
 };
 
-export default PrivacyPolicy;
+export default TermsOfUse;

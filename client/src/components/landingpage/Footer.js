@@ -114,9 +114,9 @@ const FooterPage = () => {
           </Typography>
           <Grid container alignItems="center" spacing={gridSpacing}>
             <Grid item xs={12} sm={4}>
-              <FooterLink href="/pages/privacy-policy" target="_self" underline="hover">Privacy Policy</FooterLink> <MenuSeparator />
-              <FooterLink href="/legal/privacy" target="_blank" underline="hover">Use of Cookies</FooterLink> <MenuSeparator />
-              <FooterLink href="/legal/privacy" target="_blank" underline="hover">Terms of Use</FooterLink> 
+              <FooterLink href="/legal/PrivacyPolicy" target="_self" underline="hover">Privacy Policy</FooterLink> <MenuSeparator />
+              <FooterLink href="/legal/UseOfCookies" target="_self" underline="hover">Use of Cookies</FooterLink> <MenuSeparator />
+              <FooterLink href="/legal/TermsOfUse" target="_self" underline="hover">Terms of Use</FooterLink> 
             </Grid>
           </Grid>
         </Container>
