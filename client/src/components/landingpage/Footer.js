@@ -9,13 +9,14 @@ import { gridSpacing } from 'store/constant';
 // assets
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import Subscribe from './Subscribe';
 
 const logoDark = '/assets/images/logo-dark.svg';
 
 // styles
 const FooterWrapper = styled('div')(({ theme }) => ({
   padding: '35px 0',
-  color: '#fff',
+  color: '#000',
   background: '#e9ecef',
   [theme.breakpoints.down('md')]: {
     textAlign: 'center'
@@ -68,15 +69,19 @@ const FooterPage = () => {
       <FooterWrapper>
         <Container>
           <Grid container alignItems="center" spacing={gridSpacing}>
-            <Grid item xs={12} sm={4}>
-              <Image src={logoDark} alt="Berry" width={100} height={34} layout="intrinsic" />
-            </Grid>
-            <Grid item xs={12} sm={8}>
-              <Grid
+            <Grid item xs={12} sm={5}>
+            
+            
+                <Image src={logoDark} alt="BookletZERO Dark Logo" width={100} height={34} layout="intrinsic" />
+            
+            
+                <p>BookletZERO is an Open Source Test Manager that generates tests online or in printable</p>
+            
+                <Grid
                 container
                 alignItems="center"
-                spacing={2}
-                sx={{ justifyContent: 'flex-end', [theme.breakpoints.down('md')]: { justifyContent: 'center' } }}
+                spacing={gridSpacing}
+                sx={{ justifyContent: 'flex-start', [theme.breakpoints.down('md')]: { justifyContent: 'center' } }}
               >
                 
                 <Grid item>
@@ -91,7 +96,12 @@ const FooterPage = () => {
                     Twitter
                   </FooterLink>
                 </Grid>
+                
               </Grid>
+            </Grid>
+            
+            <Grid item xs={12} sm={7}>
+              <Subscribe/>
             </Grid>
           </Grid>
         </Container>

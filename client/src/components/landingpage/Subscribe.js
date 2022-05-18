@@ -79,11 +79,7 @@ const Subscribe = () => {
           <Grid item xs={12} md={7}>
             
               <Grid container spacing={gridSpacing} sx={{ mb: '1rem' }}>
-                <Grid item sm={12}>
-                  <Typography variant="h1" component="div" sx={{ [theme.breakpoints.down('md')]: { fontSize: '1.125rem' } }}>
-                    Subscribe
-                  </Typography>
-                </Grid>
+                
                 <Grid item sm={12}>
                   <Typography variant="body2">
                     Subscribe for the latest news &#38; updates of BookletZERO Test Manager. We never send spam newsletters.
