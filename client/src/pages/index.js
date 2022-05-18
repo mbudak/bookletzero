@@ -7,7 +7,7 @@ import Feature from 'components/landingpage/Feature';
 import Demos from 'components/landingpage/Demos';
 import Layouts from 'components/landingpage/Layouts';
 import KeyFeature from 'components/landingpage/KeyFeature';
-import Subscribe from 'components/landingpage/Subscribe';
+
 import Footer from 'components/landingpage/Footer';
 
 import AppBar from 'components/ui-component/extended/AppBar';
@@ -45,9 +45,9 @@ const Landing = () => (
     <SecondWrapper>
       <KeyFeature />
     </SecondWrapper>
-    <SecondWrapper>
-      <Subscribe />
-    </SecondWrapper>
+    
+    
+    <SecondWrapper/>
     <Footer />
     
   </>

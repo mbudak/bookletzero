@@ -61,7 +61,7 @@ const Subscribe = () => {
   const theme = useTheme();
 
   return (
-    <SubscribeWrapper>
+    
       <Container>
         <Grid container alignItems="center" spacing={gridSpacing}>
           <Grid
@@ -77,7 +77,7 @@ const Subscribe = () => {
             
           </Grid>
           <Grid item xs={12} md={7}>
-            <SubscribeCard>
+            
               <Grid container spacing={gridSpacing} sx={{ mb: '1rem' }}>
                 <Grid item sm={12}>
                   <Typography variant="h1" component="div" sx={{ [theme.breakpoints.down('md')]: { fontSize: '1.125rem' } }}>
@@ -86,18 +86,18 @@ const Subscribe = () => {
                 </Grid>
                 <Grid item sm={12}>
                   <Typography variant="body2">
-                    Subscribe for the latest news &#38; updates of Berry admin template. We never send spam newsletters.
+                    Subscribe for the latest news &#38; updates of BookletZERO Test Manager. We never send spam newsletters.
                   </Typography>
                 </Grid>
                 <Grid item sm={12}>
                   <MailerSubscriber />
                 </Grid>
               </Grid>
-            </SubscribeCard>
+            
           </Grid>
         </Grid>
       </Container>
-    </SubscribeWrapper>
+    
   );
 };
 
