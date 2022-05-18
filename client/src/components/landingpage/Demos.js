@@ -25,12 +25,12 @@ const DemosPage = () => (
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h2" component="div">
-              Pre-build Dashboard &#38; Apps
+              Pre-build Questions &#38; Test Booklets
             </Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="body2">
-              Berry has customized pages with Material-UI components, Apps, Forms and lots more to explore.
+              BookletZERO has customized test booklets, online tests and lots more to explore.
             </Typography>
           </Grid>
         </Grid>
