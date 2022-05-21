@@ -23,11 +23,10 @@ export default function Component() {
       <>
         <Button
         component={Link}
-        href="/user/profile"
+        href="/me/profile"
         target="_self"
         size="large"
         variant="text"
-        
       >
         Profile
       </Button>
