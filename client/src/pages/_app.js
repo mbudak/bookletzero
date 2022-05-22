@@ -57,7 +57,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>BookletZERO - Exam Manager that generates online and printable booklets</title>
+        <title>BookletZERO - Test Manager that generates online and printable booklets</title>
         <link rel="icon" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
