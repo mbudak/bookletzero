@@ -2,13 +2,14 @@ import { useTheme } from '@mui/material/styles';
 import { Divider, Grid, Stack, Typography, useMediaQuery } from '@mui/material';
 import Link from '../../Link';
 
+import AuthLogin from 'components/authentication/auth-forms/AuthLogin';
 import Logo from 'components/ui-component/Logo';
 import AuthFooter from 'components/ui-component/cards/AuthFooter';
-
+import useAuth from 'hooks/useAuth';
 
 const Login = () => {
   const theme = useTheme();
-  // const { isLoggedIn } = useAuth();
+  const { isLoggedIn } = useAuth();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('md'));
 
   return (    
@@ -39,7 +40,7 @@ const Login = () => {
                     </Grid>
                   </Grid>
                   <Grid item xs={12}>
-                    <h1> AuthLogin Component Here...</h1>
+                    <AuthLogin />
                   </Grid>
                   <Grid item xs={12}>
                     <Divider />

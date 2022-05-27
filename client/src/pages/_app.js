@@ -20,6 +20,7 @@ import { persister, store } from 'store';
 import ThemeCustomization from 'themes';
 import MainLayout from 'layout/MainLayout';
 import GuestGuard from 'layout/GuestGuard';
+import MinimalLayout from 'layout/MinimalLayout';
 
 import RTLLayout from 'components/ui-component/RTLLayout';
 import Locales from 'components/ui-component/Locales';
@@ -49,7 +50,9 @@ function App({ Component, pageProps }) {
     case 'guestGuard':
       Layout = GuestGuard;
       break;
-    
+    case 'minimalLayout':
+      Layout = MinimalLayout;
+      break;
     default:
       Layout = Noop;
   }
@@ -68,14 +71,14 @@ function App({ Component, pageProps }) {
               <RTLLayout>
                 <Locales>
                   <NavigationScroll>
-                    
+                    <AuthProvider>
                     <SessionProvider session={pageProps.session} refetchInterval={0}>
                       <Layout>
                         <Component {...pageProps} />
                         <Snackbar />
                       </Layout>
                     </SessionProvider>
-
+                    </AuthProvider>
                   </NavigationScroll>
                 </Locales>
               </RTLLayout>

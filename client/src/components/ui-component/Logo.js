@@ -1,6 +1,5 @@
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { fill } from 'lodash';
 
 /**
  * if you want to use image instead of <svg> uncomment following.
@@ -19,7 +18,7 @@ const Logo = () => {
     /**
      * if you want to use image instead of svg uncomment following, and comment out <svg> element.
      *
-     * <img src={theme.palette.mode === 'dark' ? logoDark : logo} alt="Berry" width="100" />
+     * <img src={theme.palette.mode === 'dark' ? logoDark : logo} alt="BookletZERO" width="100" />
      *
      */
      <svg xmlns="http://www.w3.org/2000/svg" fill="black" width="92" height="32">

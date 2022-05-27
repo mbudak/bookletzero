@@ -19,6 +19,7 @@ const ProfilePage = () => {
   const { user } = useSession();    
 
   return (
+    
     <Grid container spacing={gridSpacing}>
       <Grid item sm={6} md={4}>
         <SubCard title="Profile Picture" contentSX={{ textAlign: 'center' }}>
@@ -76,4 +77,5 @@ const ProfilePage = () => {
   );
 };
 
+ProfilePage.Layout = "authGuard";
 export default ProfilePage;
