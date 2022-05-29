@@ -67,8 +67,11 @@ const Header = () => {
       <Box sx={{ flexGrow: 1 }} />
 
       
-      {/* notification & profile */}
-      <NotificationSection />
+      {/* 
+        notification & profile 
+        <NotificationSection />
+      */}
+      
       <ProfileSection />
 
       {/* mobile header */}
