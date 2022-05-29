@@ -31,7 +31,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 import MainCard from 'components/ui-component/cards/MainCard';
 import Transitions from 'components/ui-component/extended/Transitions';
 import UpgradePlanCard from './UpgradePlanCard';
-import useAuth from 'hooks/useAuth';
+
 
 // assets
 import { IconLogout, IconSearch, IconSettings, IconUser } from '@tabler/icons';
@@ -49,7 +49,7 @@ const ProfileSection = () => {
   const [value, setValue] = useState('');
   const [notification, setNotification] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
-  const { logout, user } = useAuth();
+  // const { logout, user } = useAuth();
   const [open, setOpen] = useState(false);
 
   /**

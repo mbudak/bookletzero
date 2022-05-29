@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 
 // project imports
-import useAuth from 'hooks/useAuth';
+// import useAuth from 'hooks/useAuth';
 import { useEffect } from 'react';
 // ==============================|| AUTH GUARD ||============================== //
 
@@ -11,7 +11,8 @@ import { useEffect } from 'react';
  * @param {PropTypes.node} children children element/node
  */
 const AuthGuard = ({ children }) => {
-  const { isLoggedIn } = useAuth();
+  // const { isLoggedIn } = useAuth();
+  const isLoggedIn = true;
   const router = useRouter();
   useEffect(() => {
     if (!isLoggedIn) {

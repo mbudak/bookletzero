@@ -15,7 +15,7 @@ import useConfig from 'hooks/useConfig';
 import { drawerWidth } from 'store/constant';
 import { openDrawer } from 'store/slices/menu';
 import { useDispatch, useSelector } from 'store';
-import AuthGuard from 'utils/route-guard/AuthGuard';
+
 // assets
 import { IconChevronRight } from '@tabler/icons';
 
@@ -88,7 +88,7 @@ const MainLayout = ({ children }) => {
   );
 
   return (
-    <AuthGuard>
+
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         {/* header */}
@@ -126,7 +126,7 @@ const MainLayout = ({ children }) => {
         </Main>
         
       </Box>
-    </AuthGuard>
+
   );
 };
 

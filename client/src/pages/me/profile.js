@@ -15,11 +15,9 @@ const Avatar1 = '/assets/images/users/avatar-1.png';
 // ==============================|| PROFILE 3 - PROFILE ||============================== //
 
 const ProfilePage = () => {
-  // const { user } = useAuth();
-  const { user } = useSession();    
 
   return (
-    
+
     <Grid container spacing={gridSpacing}>
       <Grid item sm={6} md={4}>
         <SubCard title="Profile Picture" contentSX={{ textAlign: 'center' }}>
@@ -37,6 +35,7 @@ const ProfilePage = () => {
                 <Button variant="contained" size="small">
                   Upload Avatar
                 </Button>
+                
               </AnimateButton>
             </Grid>
           </Grid>
@@ -46,7 +45,7 @@ const ProfilePage = () => {
         <SubCard title="Edit Account Details">
           <Grid container spacing={gridSpacing}>
             <Grid item xs={12}>
-              <TextField id="outlined-basic1" fullWidth label="Name" defaultValue={user?.name} helperText="Helper text" />
+              <TextField id="outlined-basic1" fullWidth label="Name" defaultValue="" helperText="Helper text" />
             </Grid>
             <Grid item xs={12}>
               <TextField id="outlined-basic6" fullWidth label="Email address" defaultValue="name@example.com" />
@@ -74,6 +73,7 @@ const ProfilePage = () => {
         </SubCard>
       </Grid>
     </Grid>
+
   );
 };
 

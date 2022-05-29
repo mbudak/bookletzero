@@ -108,7 +108,8 @@ export const JWTProvider = ({ children }) => {
   }, []);
 
   const login = async (email, password) => {
-
+    console.log('login', email, password);
+    
     if (window.localStorage.getItem('users') !== undefined && window.localStorage.getItem('users') !== null) {
       const localUsers = window.localStorage.getItem('users');
       users = JSON.parse(localUsers);

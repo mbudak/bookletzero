@@ -176,7 +176,7 @@ const HeaderPage = () => {
                   delay: 0.4
                 }}
               >
-                <HeaderAnimationImage src="/assets/images/landing/widget-2.png" alt="Berry" />
+                <HeaderAnimationImage src="/assets/images/landing/widget-2.png" alt="Booklet ZERO Widget" />
               </motion.div>
             </Box>
           </Box>

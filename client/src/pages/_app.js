@@ -71,14 +71,14 @@ function App({ Component, pageProps }) {
               <RTLLayout>
                 <Locales>
                   <NavigationScroll>
-                    <AuthProvider>
+                    
                     <SessionProvider session={pageProps.session} refetchInterval={0}>
                       <Layout>
                         <Component {...pageProps} />
                         <Snackbar />
                       </Layout>
                     </SessionProvider>
-                    </AuthProvider>
+                    
                   </NavigationScroll>
                 </Locales>
               </RTLLayout>

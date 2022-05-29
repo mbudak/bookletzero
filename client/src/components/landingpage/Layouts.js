@@ -142,12 +142,12 @@ const LayoutsPage = () => {
                 <LayoutImageWrapper>
                   <Image
                     src={theme.palette.mode === 'dark' ? imgLayoutDarkGrid : imgLayoutGrid}
-                    alt="Berry Dashboard"
+                    alt="BookletZERO Dashboard"
                     layout="fill"
                     width="100%"
                     height="100%"
                   />
-                  <LayoutImage src={imgLayout1} alt="Berry" />
+                  <LayoutImage src={imgLayout1} alt="BookletZERO" />
                 </LayoutImageWrapper>
               </Grid>
               <Grid item sm={6}>
@@ -182,12 +182,12 @@ const LayoutsPage = () => {
                 <LayoutImageWrapper>
                   <Image
                     src={theme.palette.mode === 'dark' ? imgLayoutDarkGrid : imgLayoutGrid}
-                    alt="Berry Dashboard"
+                    alt="Booklet ZERO Dashboard"
                     layout="fill"
                     width="100%"
                     height="100%"
                   />
-                  <LayoutImage src={imgLayout2} alt="Berry" style={{ animationDelay: '1.5s' }} />
+                  <LayoutImage src={imgLayout2} alt="BookletZERO" style={{ animationDelay: '1.5s' }} />
                 </LayoutImageWrapper>
               </Grid>
             </Grid>
@@ -198,12 +198,12 @@ const LayoutsPage = () => {
                 <LayoutImageWrapper>
                   <Image
                     src={theme.palette.mode === 'dark' ? imgLayoutDarkGrid : imgLayoutGrid}
-                    alt="Berry Dashboard"
+                    alt="BookletZERO Dashboard"
                     layout="fill"
                     width="100%"
                     height="100%"
                   />
-                  <LayoutImage src={imgLayout3} alt="Berry" style={{ animationDelay: '3s' }} />
+                  <LayoutImage src={imgLayout3} alt="BookletZERO" style={{ animationDelay: '3s' }} />
                 </LayoutImageWrapper>
               </Grid>
               <Grid item sm={6}>

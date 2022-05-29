@@ -1,4 +1,3 @@
-
 export const JWT_API = {
   secret: 'gfYLKd6f4PPstudcSrr9jFPv927VpVdN',
   timeout: '1 days'
@@ -6,7 +5,7 @@ export const JWT_API = {
 
 
 // basename: only at build time to set, and Don't add '/' at end off BASENAME for breadcrumbs, also Don't put only '/' use blank('') instead,
-// like '/berry-material-react/react/default'
+// like '/home/react/default'
 export const BASE_PATH = '';
 
 export const DASHBOARD_PATH = '/dashboard/default';
