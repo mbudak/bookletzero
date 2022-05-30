@@ -41,7 +41,10 @@ Noop.propTypes = {
 
 // ==============================|| APP ||============================== //
 
-function App({ Component, pageProps }) {
+function App({ 
+  Component, 
+  pageProps: { session, ...pageProps }
+}) {
   let Layout;
   switch (Component.Layout) {
     case 'authGuard':
@@ -71,7 +74,7 @@ function App({ Component, pageProps }) {
               <RTLLayout>
                 <Locales>
                   <NavigationScroll>
-                    <SessionProvider session={pageProps.session} refetchInterval={0}>
+                    <SessionProvider session={pageProps.session}>
                     <AuthProvider>
                       <Layout>
                         <Component {...pageProps} />

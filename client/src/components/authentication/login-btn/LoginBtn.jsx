@@ -17,8 +17,22 @@ import { useSession, signIn, signOut } from "next-auth/react";
 */
 
 export default function Component() {
-  const { data: session } = useSession();
-  if (session) {
+  const { status } = useSession({ required: true })
+  
+  if (status === 'loading') {
+    return (
+      <>
+        <Button        
+        size="large"
+        variant="text"
+      >
+        Loading...
+      </Button>
+      </>
+    )
+  }
+
+  if (status) {
     return (
       <>
         <Button
@@ -32,7 +46,7 @@ export default function Component() {
       </Button>
       </>
     )
-  }
+  } else 
   return (
         <Button
         component={Link}

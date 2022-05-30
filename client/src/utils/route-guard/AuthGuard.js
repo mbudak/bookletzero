@@ -15,8 +15,15 @@ import { useEffect } from 'react';
  */
  
 const AuthGuard = ({ children }) => {
-  // const { data: session } = useSession();
+  const { status } = useSession({ required: true });
+  console.log('session is: ', status);
   const isLoggedIn = false;
+  if (status === 'authenticated') {
+    isLoggedIn = true;
+  } else {
+    isLoggedIn = false;
+  }
+  
   
   const router = useRouter();
   useEffect(() => {
