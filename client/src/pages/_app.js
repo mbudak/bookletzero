@@ -29,9 +29,9 @@ import Snackbar from 'components/ui-component/extended/Snackbar';
 import { ConfigProvider } from 'contexts/ConfigContext';
 
 
-// import { Auth0Provider as AuthProvider } from '../contexts/Auth0Context';
-import { JWTProvider as AuthProvider } from 'contexts/JWTContext';
-// import { AWSCognitoProvider as AuthProvider } from 'contexts/AWSCognitoContext';
+
+import { NextAuthProvider as AuthProvider } from 'contexts/NextAuthContext';
+
 
 const Noop = ({ children }) => <> {children} </>;
 
@@ -71,14 +71,14 @@ function App({ Component, pageProps }) {
               <RTLLayout>
                 <Locales>
                   <NavigationScroll>
-                    
                     <SessionProvider session={pageProps.session} refetchInterval={0}>
+                    <AuthProvider>
                       <Layout>
                         <Component {...pageProps} />
                         <Snackbar />
                       </Layout>
+                      </AuthProvider>
                     </SessionProvider>
-                    
                   </NavigationScroll>
                 </Locales>
               </RTLLayout>
