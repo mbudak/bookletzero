@@ -21,7 +21,8 @@ import {
   Popper,
   Stack,
   Switch,
-  Typography
+  Typography,
+  Link
 } from '@mui/material';
 
 // third-party
@@ -37,7 +38,7 @@ import Transitions from 'components/ui-component/extended/Transitions';
 import { IconLogout, IconSearch, IconSettings, IconUser } from '@tabler/icons';
 import useConfig from 'hooks/useConfig';
 
-const User1 = '/assets/images/users/profile.png';
+const DefaultUser = '/assets/images/users/profile.png';
 
 // ==============================|| PROFILE MENU ||============================== //
 
@@ -52,9 +53,14 @@ const ProfileSection = () => {
   // const { logout, user } = useAuth();
   const [open, setOpen] = useState(false);
 
+  const handleAccountProfile = async() => {
+    console.log('user profile clicked');
+  }
+  
   /**
    * anchorRef is used on different components and specifying one type leads to other components throwing an error
    * */
+  
   const anchorRef = useRef(null);
   const handleLogout = async () => {
     try {
@@ -70,11 +76,6 @@ const ProfileSection = () => {
     }
 
     setOpen(false);
-  };
-
-  const handleListItemClick = (event, index) => {
-    setSelectedIndex(index);
-    handleClose(event);
   };
 
   const handleToggle = () => {
@@ -114,7 +115,7 @@ const ProfileSection = () => {
         }}
         icon={
           <Avatar
-            src={User1}
+            src={DefaultUser}
             sx={{
               ...theme.typography.mediumAvatar,
               margin: '8px 0 8px 8px !important',
@@ -219,15 +220,13 @@ const ProfileSection = () => {
                             }
                           }}
                         >
-                          <ListItemButton
-                            sx={{ borderRadius: `${borderRadius}px` }}
-                            selected={selectedIndex === 0}
-                            onClick={(event) => handleListItemClick(event, 0)}
+                          <ListItemButton component={Link} href="/me/profile" target="_self"
+                            sx={{ borderRadius: `${borderRadius}px` }}                                                        
                           >
                             <ListItemIcon>
                               <IconSettings stroke={1.5} size="1.3rem" />
                             </ListItemIcon>
-                            <ListItemText primary={<Typography variant="body2">Account Settings</Typography>} />
+                            <ListItemText primary={<Typography variant="body2">Account Settings</Typography>}/>
                           </ListItemButton>
                           
                           <ListItemButton sx={{ borderRadius: `${borderRadius}px` }} selected={selectedIndex === 4} onClick={handleLogout}>
