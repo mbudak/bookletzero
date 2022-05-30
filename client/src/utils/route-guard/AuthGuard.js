@@ -13,14 +13,11 @@ import { useEffect } from 'react';
  * Authentication guard for routes
  * @param {PropTypes.node} children children element/node
  */
+ 
 const AuthGuard = ({ children }) => {
-  const { data: session, status } = useSession()
-
+  // const { data: session } = useSession();
   const isLoggedIn = false;
-  if (status === 'authenticated'){
-    isLoggedIn = true;
-  }
-
+  
   const router = useRouter();
   useEffect(() => {
     if (!isLoggedIn) {
