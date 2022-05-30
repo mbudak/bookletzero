@@ -71,7 +71,7 @@ const Header = () => {
         notification & profile 
         <NotificationSection />
       */}
-      
+
       <ProfileSection />
 
       {/* mobile header */}
