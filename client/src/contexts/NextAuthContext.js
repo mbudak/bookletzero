@@ -16,7 +16,7 @@ import Loader from 'components/ui-component/Loader';
 import axios from 'utils/axios';
 
 // Next-Auth
-import { useSession, signIn, signOut } from "next-auth/react"
+import { useSession, signIn, signOut } from "next-auth/react";
 
 
 // constant

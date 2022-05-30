@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 
+// Next-Auth
+import { useSession, signIn, signOut } from "next-auth/react";
+
 // project imports
 // import useAuth from 'hooks/useAuth';
 import { useEffect } from 'react';
@@ -11,8 +14,13 @@ import { useEffect } from 'react';
  * @param {PropTypes.node} children children element/node
  */
 const AuthGuard = ({ children }) => {
-  // const { isLoggedIn } = useAuth();
-  const isLoggedIn = true;
+  const { data: session, status } = useSession()
+
+  const isLoggedIn = false;
+  if (status === 'authenticated'){
+    isLoggedIn = true;
+  }
+
   const router = useRouter();
   useEffect(() => {
     if (!isLoggedIn) {

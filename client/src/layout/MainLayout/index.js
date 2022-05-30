@@ -18,6 +18,7 @@ import { useDispatch, useSelector } from 'store';
 
 // assets
 import { IconChevronRight } from '@tabler/icons';
+import AuthGuard from 'utils/route-guard/AuthGuard';
 
 // styles
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({ theme, open }) => ({
@@ -88,7 +89,7 @@ const MainLayout = ({ children }) => {
   );
 
   return (
-
+    <AuthGuard>
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         {/* header */}
@@ -124,9 +125,8 @@ const MainLayout = ({ children }) => {
             </>
           )}
         </Main>
-        
       </Box>
-
+      </AuthGuard>
   );
 };
 

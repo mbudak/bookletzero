@@ -26,7 +26,7 @@ const categories_menu = {
       breadcrumbs: false
     },
     {
-      id: 'exams',
+      id: 'users',
       title: <FormattedMessage id="users" />,
       type: 'item',
       url: '/dashboard/analytics',
@@ -34,7 +34,7 @@ const categories_menu = {
       breadcrumbs: false
     },
     {
-      id: 'exams',
+      id: 'categories',
       title: <FormattedMessage id="categories" />,
       type: 'item',
       url: '/categories',
