@@ -18,7 +18,8 @@ import { useDispatch, useSelector } from 'store';
 
 // assets
 import { IconChevronRight } from '@tabler/icons';
-import AuthGuard from 'utils/route-guard/AuthGuard';
+
+import { useSession, signIn, signOut } from "next-auth/react";
 
 // styles
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({ theme, open }) => ({
@@ -67,6 +68,8 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({
 // ==============================|| MAIN LAYOUT ||============================== //
 
 const MainLayout = ({ children }) => {
+  
+  const { status } = useSession({ required: true })
   const theme = useTheme();
   const matchDownMd = useMediaQuery(theme.breakpoints.down('lg'));
 
@@ -89,7 +92,6 @@ const MainLayout = ({ children }) => {
   );
 
   return (
-    <AuthGuard>
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         {/* header */}
@@ -105,7 +107,7 @@ const MainLayout = ({ children }) => {
         >
           {header}
         </AppBar>
-
+        
         {/* drawer */}
         <Sidebar />
 
@@ -126,7 +128,7 @@ const MainLayout = ({ children }) => {
           )}
         </Main>
       </Box>
-      </AuthGuard>
+
   );
 };
 

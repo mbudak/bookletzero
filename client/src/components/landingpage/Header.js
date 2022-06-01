@@ -34,7 +34,6 @@ const HeaderPage = () => {
 
   return (
     <Container>
-      
       <Grid
         container
         alignItems="center"

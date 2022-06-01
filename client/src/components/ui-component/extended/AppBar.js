@@ -67,6 +67,7 @@ const AppBar = ({ ...others }) => {
     setDrawerToggle(open);
   };
 
+  
   return (
     <ElevationScroll {...others}>
       <MuiAppBar>
@@ -102,7 +103,7 @@ const AppBar = ({ ...others }) => {
                           <ListItemText primary="Dashboard" />
                         </ListItemButton>
                       </Link>
-                      <Link style={{ textDecoration: 'none' }} href="https://codedthemes.gitbook.io/berry" target="_blank">
+                      <Link style={{ textDecoration: 'none' }} href="https://github.com/mbudak/bookletzero" target="_blank">
                         <ListItemButton component="a">
                           <ListItemIcon>
                             <IconBook />

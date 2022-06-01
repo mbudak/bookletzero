@@ -5,6 +5,15 @@ export default function componentStyleOverrides(theme, borderRadius, outlinedFil
   const menuSelected = mode === 'dark' ? theme.palette.secondary.main : theme.palette.secondary.dark;
 
   return {
+    MuiAppBar: {
+      styleOverrides: {
+        colorPrimary: {
+          // backgroundColor: '#bc6c25cc',
+          
+
+        }
+      }
+    },
     MuiButton: {
       styleOverrides: {
         root: {
